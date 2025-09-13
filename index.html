@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABA JEE RESTAURENT</title>
+    <style>
+        body{
+            background-color:darkgoldenrod;
+        }
+        h1{
+            text-align: center;
+            font-family: serif;
+        }
+        table,td,th {
+            border: 1px solid black;
+        }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        font-family: serif;
+        font-size:20px;
+
+    }
+    .accordion{
+        background-color: #eee;
+        color: #444;
+        padding: 20px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    .active, .accordion:hover{
+        background-color: #ccc;
+    }
+    .panel{
+        background-color:darkolivegreen;
+        text-align:left;
+        font-size: 20px;
+        padding: 0 20px;
+        display: none;
+        overflow: hidden;
+        border: 1px solid black;
+
+    }
+
+    #menu{color:red;padding: 50px;}
+    #food{color:black; padding: 50px;}
+    #tea{color: black; padding: 50px;}
+    #water{color: red; padding: 50px;}
+    input{ color:black;font-family: serif; font-size: 15px;
+    }
+    input[type=text] , select{
+        width: 100%;
+        padding: 15px;    
+    }
+   input[type=url] , select{
+    width: 100%;
+    padding: 15px;
+   }
+    </style>
+
+</head>
+<body>
+    <h1>BABA JEE RESTAURANT</h1>
+  <ul><h2>MENU</h2></ul>
+  <input id="menu" type="button" value="Chicken Kabab" /> 
+  <input id="food" type="button" value="Pratha">
+  <input id="tea" type="button"  value="Tandoori">
+  <input id="water" type="button" value="Pratha Roll">
+ 
+
+    <button class="accordion">Bar B.Q</button>
+    <div class="panel">
+        <a href="https://www.google.com" target="_blank"> <img src="img/barbq.jpg" width="300" alt=" Bar B.Q "> </a>
+        <table>
+            <thead> 
+                <caption><h4>MENU </h4></caption>
+                <tr>
+                    <th>Food Name</th>
+                    <th>Price</th>
+                    <th>KG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chicken Kabab</td>
+                    <td>120</td>
+                    <td>1400</td>
+                </tr>
+                <tr>
+                    <td>Chicken Tikka</td>
+                    <td>200</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>Malai Boti</td>
+                    <td>240</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <td>Chest Piece</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>BoneLess Tikka</td>
+                    <td>240</td>
+                    <td>1500</td>
+                </tr>
+                <tr>
+                    <td>Chicken Leg Piece</td>
+                    <td>300</td>
+                </tr>
+                  
+            </tbody>
+        </table>  
+    </div>
+    <button class="accordion">Tandoor</button>
+    <div class="panel">
+        <a href="https://www.google.com" target="_blank"><img src="img/tandoor.jpg" width="300" alt="Tandoori Chicken"></a>
+        <table>
+            <thead>
+                <caption>MENU </caption>
+                <tr>
+                    <th>Food Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kalwangi Nan</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Roghni Nan</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Plain Nan</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Sada Roti</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="accordion">Pratha Roll</button>
+    <div class="panel">
+        <a href="https://www.google.com" target="_blank"><img src="img/pratha.jpg" width="300" alt="Pratha Roll"></a>
+        <table>
+            <thead>
+                <caption>Menu</caption>
+                <tr>
+                    <th>Food Name</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Chicken Tikka Pratha Roll</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Chicken Tikka Mayo Roll </td>
+                    <td>340</td>
+                </tr>
+                <tr>
+                    <td>Chicken Tikka Cheese Roll</td>
+                    <td>340</td>
+                </tr>
+                <tr>
+                    <td>Chicken Tikka Mayo Cheese Roll</td>
+                    <td>390</td>
+                </tr>
+                <tr>
+                    <td>Chicken Bihari Roll </td>
+                    <td>320</td>
+                </tr>
+                <tr>
+                    <td>Chicken Behari Mayo Roll </td>
+                    <td>370</td>
+                </tr>
+                <tr>
+                    <td>Chicken Behari Cheese Roll </td>
+                    <td>370 </td>
+                </tr>
+                <tr>
+                    <td>Behari Mayo Cheese Roll</td>
+                    <td>430</td>
+                </tr>
+                <tr>
+                    <td>Chicken Tikka Roll Double</td>
+                    <td>470</td>
+                </tr>
+                <tr>
+                    <td>Chicken Tikka Jumbo Roll</td>
+                    <td>510</td>
+                </tr>
+                <tr>
+                    <td>Jumbo Mayo Cheese Roll</td>
+                    <td>610</td>
+                </tr>
+                <tr>
+                    <td>Jumbo Malai Roll</td>
+                    <td>570</td>
+                </tr>
+                <tr>
+                    <td>Jumbo Malai Cheese Roll </td>
+                    <td>620</td>
+                </tr>
+                <tr>
+                    <td>Chicken Malai Roll</td>
+                    <td>380</td>
+                </tr>
+                <tr>
+                    <td>Chicken Malai Cheese Roll</td>
+                    <td>410</td>
+                </tr>
+                <tr>
+                    <td>Chicken Malai Mayo Roll </td>
+                    <td>410</td>
+                </tr>
+                <tr>
+                    <td>Chicken Reshmi Roll</td>
+                    <td>440</td>
+                </tr>
+                <tr>
+                    <td>Chicken Kabab Roll</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                     <td>Kabab Mayo Roll</td>
+                     <td>290</td>
+                </tr>
+                <tr>
+                    <td>Kabab Cheese Roll</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Chicken Kabab Double Roll</td>
+                    <td>370</td>
+                </tr>
+                <tr>
+                    <td>Karachi Special Roll</td>
+                    <td>440</td>
+                </tr>
+            </thead>
+        </table> 
+    </div>
+    <button class="accordion">Pratha</button>
+    <div class="panel">
+        <a href="https://www.google.com" target="_blank"><img src="img/roll.jpg" width="300" alt="Paratha"></a>
+        <table> 
+            <thead>
+                <caption>Menu</caption>
+                <tr>
+                    <th>Food name</th>
+                    <th>Price</th>
+                    <th>KG</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chicken Paratha</td>
+                    <td>370</td>
+                </tr>
+                <tr>
+                    <td>Chicken Cheese Paratha</td>
+                    <td>420</td>
+                </tr>
+                <tr>
+                    <td>Allo Paratha</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Allo Cheese Pratha</td>
+                    <td>
+                        200
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sada Paratha</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Cheese Paratha </td>
+                    <td>
+                        250
+                    </td>
+                </tr>
+                <tr>
+                    <td>Extra Mio</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Extra Cheese</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Chicken White Karahi</td>
+                    <td>2000</td>
+                    <td>1500 KG 750-Half KG</td>
+                </tr>
+                <tr>
+                    <td>Kabab Masala</td>
+                    <td>2000</td>
+                    <td>1500 KG 700-Half KG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <br>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Your Name"> <br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Last Name"> <br>
+        <label for="hompage">Add Your Address</label> 
+        <input type="url" id="hompage" name="hompage" placeholder="Your Address"> <br>
+        <label for="no">Phone No </label>
+        <input type="number" name="Phone Number" placeholder="Contact" id="no"><br>
+        <br><input type="button" value="Submit">
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
